@@ -1,0 +1,57 @@
+name: "🐾 Poner en adopción"
+description: "Formulario para registrar a una mascota en adopción"
+title: "[Adopción]: Nombre de la mascota"
+labels: ["en adopción"]
+
+body:
+  - type: input
+    id: nombre
+    attributes:
+      label: "🐾 Nombre"
+      placeholder: "Ejemplo: Lunita"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: edad
+    attributes:
+      label: "📅 Edad"
+      options:
+        - Cachorro (0-1 año)
+        - Joven (1-3 años)
+        - Adulto (3-7 años)
+        - Senior (+7 años)
+
+  - type: dropdown
+    id: sexo
+    attributes:
+      label: "⚧ Sexo"
+      options:
+        - Hembra
+        - Macho
+        - No definido
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "📖 Descripción"
+      placeholder: "Ejemplo: Muy cariñosa, convive bien con niños, vacunada..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: fotos
+    attributes:
+      label: "📸 Fotos"
+      description: "Arrastra hasta **3 fotos** aquí o pégalas como enlaces (GitHub las subirá automáticamente)."
+      placeholder: "Ejemplo: https://... / o suelta las fotos aquí"
+    validations:
+      required: true
+
+  - type: input
+    id: link_post
+    attributes:
+      label: "🔗 Post en Facebook o Instagram"
+      placeholder: "https://facebook.com/... o https://instagram.com/..."
+    validations:
+      required: false
