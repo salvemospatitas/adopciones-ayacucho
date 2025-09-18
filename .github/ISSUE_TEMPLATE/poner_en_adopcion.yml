@@ -1,6 +1,6 @@
 name: "🐾 Poner en adopción"
 description: "Formulario para registrar a una mascota en adopción"
-title: "[Adopción]: Nombre de la mascota"
+title: "Nombre de la mascota en adopción"
 labels: ["en adopción"]
 
 body:
